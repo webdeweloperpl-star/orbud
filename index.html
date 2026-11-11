@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORBUD Montaże | Montaż okien, drzwi, rolet i bram Suwałki</title>
+<meta name="description" content="Montaż okien, drzwi wejściowych i wewnętrznych, rolet zewnętrznych, bram garażowych i parapetów w Suwałkach i okolicach. Ponad 20 lat doświadczenia, bezpłatny pomiar i wycena. Zadzwoń: 600 948 614.">
+<meta name="theme-color" content="#0f0e10">
+<link rel="icon" type="image/png" href="images/favicon-192.png">
+<link rel="apple-touch-icon" href="images/favicon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ORBUD Montaże | Montaż okien i drzwi Suwałki">
+<meta property="og:description" content="Okna, drzwi, rolety zewnętrzne, bramy garażowe i parapety. Ponad 20 lat doświadczenia, bezpłatny pomiar i wycena.">
+<meta property="og:image" content="images/hero.webp">
+<meta property="og:locale" content="pl_PL">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "ORBUD Montaże",
+  "founder": "Wojciech Orłowski",
+  "telephone": "+48600948614",
+  "image": "images/hero.webp",
+  "description": "Montaż okien, drzwi, rolet zewnętrznych, bram garażowych i parapetów. Wykończenia wnętrz, docieplenia i elewacje.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Suwałki", "addressCountry": "PL" },
+  "areaServed": "Suwałki i okolice",
+  "priceRange": "Bezpłatna wycena"
+}
+</script>
+<style>
+:root{
+  --ink:#0f0e10;--ink-2:#18161a;--ink-3:#221f25;
+  --line:rgba(255,255,255,.1);--line-2:rgba(255,255,255,.18);
+  --txt:rgba(255,255,255,.92);--muted:rgba(255,255,255,.72);
+  --accent:#7a1745;--accent-d:#5a0f33;--accent-l:#e889b4;
+  --r:22px;
+  --f-d:"Manrope",system-ui,sans-serif;
+  --f:"Manrope",system-ui,sans-serif;
+  --hdr:76px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hdr)}
+body{font:400 16px/1.6 var(--f);color:var(--txt);background:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{width:min(1200px,100% - 96px);margin-inline:auto}
+section{padding:100px 0}
+
+.eyebrow{font:600 13px/1.3 var(--f);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-l);margin-bottom:16px}
+.h1,.h2,.h3{font-family:var(--f-d);font-weight:800;letter-spacing:-.025em;line-height:1.05;text-wrap:balance}
+.h1{font-size:clamp(38px,5.2vw,74px)}
+.h2{font-size:clamp(32px,4vw,54px)}
+.h3{font-size:clamp(21px,1.8vw,25px);line-height:1.2;letter-spacing:-.015em}
+.h1 em,.h2 em{font-style:normal;color:var(--accent-l)}
+p{text-wrap:pretty}
+.sec-head{max-width:700px;margin-bottom:48px}
+.sec-head p:not(.eyebrow){margin-top:18px;color:var(--muted);font-size:18px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 36px;border-radius:999px;font:600 16px/1.2 var(--f);text-decoration:none;transition:transform .2s,background .2s,border-color .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--accent{background:var(--accent);color:#fff;box-shadow:0 12px 34px -10px rgba(122,23,69,.85)}
+.btn--accent:hover{background:#8e1c52;transform:translateY(-2px)}
+.btn--ghost{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.btn--ghost:hover{background:rgba(255,255,255,.08);border-color:#fff}
+.btn--sm{padding:12px 22px;font-size:15px}
+
+/* ===== header ===== */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
+.hdr.is-scrolled{background:rgba(15,14,16,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+.hdr__in{display:flex;align-items:center;gap:28px;height:var(--hdr)}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.logo__mark{width:52px;height:50px;object-fit:contain;flex:none}
+.logo__t{display:flex;flex-direction:column;line-height:1.05}
+.logo__t strong{font:800 21px var(--f-d);letter-spacing:.04em}
+.logo__t small{font:500 12px var(--f);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.nav{display:flex;gap:28px;margin-left:auto;font-size:15px;font-weight:500}
+.nav a{text-decoration:none;color:rgba(255,255,255,.85);transition:color .2s}
+.nav a:hover{color:#fff}
+.hdr__tel{font-weight:600;text-decoration:none;font-size:15px;white-space:nowrap}
+.burger{display:none;width:44px;height:44px;margin-left:auto;position:relative}
+.burger span{position:absolute;left:10px;right:10px;height:2px;background:#fff;transition:.3s}
+.burger span:first-child{top:17px}.burger span:last-child{top:25px}
+.menu-open .burger span:first-child{top:21px;transform:rotate(45deg)}
+.menu-open .burger span:last-child{top:21px;transform:rotate(-45deg)}
+
+/* menu mobilne: rodzeństwo headera (pułapka backdrop-filter) */
+.mmenu{position:fixed;inset:0;z-index:45;background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:var(--hdr) 24px 40px;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.mmenu.open{opacity:1;visibility:visible}
+.mmenu .btn{width:80%;max-width:340px;padding:20px 0;font-size:17px;margin-bottom:22px}
+.mmenu a:not(.btn){font:800 28px/1.1 var(--f-d);letter-spacing:-.02em;text-decoration:none;padding:12px 0}
+
+/* ===== hero ===== */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;color:#fff}
+.hero__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:kb 18s ease-out forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero__shade{position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(15,14,16,.9) 0%,rgba(15,14,16,.62) 45%,rgba(15,14,16,.15) 85%),
+  linear-gradient(0deg,rgba(15,14,16,.92) 0%,rgba(15,14,16,0) 55%)}
+.hero__in{position:relative;z-index:1;padding:calc(var(--hdr) + 48px) 0 64px}
+.hero .h1{max-width:15ch;margin-bottom:22px;text-shadow:0 2px 24px rgba(0,0,0,.6)}
+.hero__lead{max-width:580px;font-size:clamp(16px,1.5vw,19px);color:rgba(255,255,255,.9);margin-bottom:32px;text-shadow:0 1px 12px rgba(0,0,0,.7)}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero__in{padding-bottom:88px}
+/* wejście hero: keyframes z rosnącym delay */
+.rise{opacity:0;transform:translateY(22px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.rise:nth-child(1){animation-delay:.15s}.rise:nth-child(2){animation-delay:.3s}.rise:nth-child(3){animation-delay:.45s}.rise:nth-child(4){animation-delay:.6s}.rise:nth-child(5){animation-delay:.75s}
+
+/* ===== fade (kolejka w JS) ===== */
+.fade{opacity:0;transform:translateY(18px);transition:opacity .6s ease-out,transform .6s ease-out}
+.fade.on{opacity:1;transform:none}
+
+/* ===== ticker ===== */
+.ticker{background:var(--accent);color:#fff;overflow:hidden;padding:16px 0}
+.ticker__t{display:flex;gap:44px;width:max-content;animation:tick 40s linear infinite;font:700 18px/1 var(--f-d);letter-spacing:-.01em;white-space:nowrap}
+.ticker__t span{display:flex;align-items:center;gap:44px}
+.ticker__t span::before{content:"";width:8px;height:8px;border-radius:2px;background:rgba(255,255,255,.55);transform:rotate(45deg)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ===== jak to wygląda ===== */
+.jak{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-2) 100%)}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{position:relative;background:var(--ink-3);border:1px solid var(--line);border-radius:var(--r);padding:34px 32px 36px}
+.step__num{font:800 52px/1 var(--f-d);letter-spacing:-.04em;color:var(--accent-l);opacity:.55;margin-bottom:22px}
+.step .h3{margin-bottom:10px}
+.step p{color:var(--muted);font-size:16px}
+.steps__cta{margin-top:36px}
+
+/* ===== usługi ===== */
+.svc__grid{display:grid;grid-template-columns:1.25fr 1fr;gap:20px}
+.card{display:flex;flex-direction:column;background:var(--ink-2);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.card--main{grid-row:span 3}
+.card--mini{flex-direction:row;gap:24px;align-items:center;padding:30px 32px}
+.card__ico{flex:none;width:56px;height:56px;padding:12px;border-radius:16px;background:rgba(232,137,180,.1);fill:none;stroke:var(--accent-l);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.card--mini .card__num{margin-bottom:8px}
+.card--mini .h3{margin-bottom:8px}
+.card--mini p{font-size:15px}
+.svc__more{font:800 22px/1.2 var(--f-d);letter-spacing:-.015em;margin:56px 0 20px;color:var(--muted)}
+.svc__extra{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card--row{flex-direction:row}
+.card--row .card__img{flex:0 0 40%;aspect-ratio:auto}
+.card--row .card__body{padding:28px 28px 30px}
+.card__img{aspect-ratio:16/9;overflow:hidden}
+.card--main .card__img{aspect-ratio:4/3}
+.card__img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .card__img img{transform:scale(1.04)}
+.card__body{display:flex;flex-direction:column;flex:1;padding:30px 32px 32px}
+.card__num{font:700 20px/1 var(--f-d);color:rgba(255,255,255,.45);letter-spacing:.06em;margin-bottom:12px}
+.card .h3{margin-bottom:12px}
+.card p{color:var(--muted);font-size:16px}
+.checks{list-style:none;display:grid;gap:10px;margin-top:20px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--txt)}
+.checks li::before{content:"";flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/13px no-repeat}
+.card__cta{margin-top:auto;padding-top:26px}
+
+/* ===== o mnie ===== */
+.about{background:var(--ink-2)}
+.about__grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about__img{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5}
+.about__img img{width:100%;height:100%;object-fit:cover}
+.about__badge{position:absolute;left:20px;bottom:20px;background:var(--accent);color:#fff;border-radius:18px;padding:16px 22px;display:flex;flex-direction:column}
+.about__badge strong{font:700 40px/1 var(--f-d)}
+.about__badge small{font-size:14px;color:rgba(255,255,255,.88);margin-top:4px}
+.about__lead{color:var(--muted);font-size:17px;margin-top:20px}
+.about__sign{margin-top:28px;font:800 20px var(--f-d);letter-spacing:-.01em}
+.about__sign small{display:block;font:500 14px var(--f);text-transform:none;letter-spacing:0;color:var(--muted)}
+
+/* ===== realizacje ===== */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gal figure{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;inset:auto 0 0;padding:40px 18px 14px;background:linear-gradient(0deg,rgba(15,14,16,.9),rgba(15,14,16,0));font-size:15px;font-weight:600}
+
+/* ===== końcowe CTA ===== */
+.cta{padding-top:0}
+.cta__box{border-radius:32px;padding:80px 64px;background:radial-gradient(120% 140% at 0% 0%,#8e1c52 0%,#5a0f33 55%,#3a0a21 100%);position:relative;overflow:hidden}
+.cta__box .h2 em{color:#fff;opacity:.6}
+.cta__tel{display:inline-block;margin:26px 0 8px;font:800 clamp(44px,7.5vw,104px)/1 var(--f-d);text-decoration:none;letter-spacing:-.03em;white-space:nowrap}
+.cta__tel:hover{opacity:.85}
+.cta__sub{color:rgba(255,255,255,.85);font-size:18px;margin-bottom:30px}
+.cta__btns{display:flex;flex-wrap:wrap;gap:12px}
+.cta__box .btn--accent{background:#fff;color:var(--accent-d);box-shadow:none}
+.cta__box .btn--accent:hover{background:#f4e6ee}
+
+/* ===== stopka ===== */
+.ftr{border-top:1px solid var(--line);padding:44px 0}
+.ftr__in{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between}
+.ftr p,.ftr a{color:rgba(255,255,255,.78);font-size:15px;text-decoration:none}
+.ftr a:hover{color:#fff}
+.ftr__links{display:flex;flex-wrap:wrap;gap:24px}
+
+/* ===== pływający telefon ===== */
+.fab{position:fixed;right:18px;bottom:18px;z-index:40;width:62px;height:62px;border-radius:50%;background:var(--accent);color:#fff;display:none;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.7);opacity:0;transform:translateY(20px) scale(.9);transition:opacity .3s,transform .3s;pointer-events:none}
+.fab svg{width:26px;height:26px}
+.fab::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--accent-l);animation:ring 2s ease-out infinite}
+@keyframes ring{from{transform:scale(1);opacity:.8}to{transform:scale(1.6);opacity:0}}
+.fab.show{opacity:1;transform:none;pointer-events:auto}
+
+@media (max-width:980px){
+  .steps{grid-template-columns:1fr;gap:14px}
+  .svc__grid{grid-template-columns:1fr}
+  .card--main{grid-row:auto}
+  .svc__extra{grid-template-columns:1fr}
+  .about__grid{grid-template-columns:1fr;gap:40px}
+  .about__img{aspect-ratio:4/3}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .fab{display:grid}
+}
+@media (max-width:768px){
+  .step{padding:26px 24px 28px}
+  .step__num{font-size:40px;margin-bottom:14px}
+  .steps__cta .btn{width:100%}
+  .card__body{padding:26px 24px 28px}
+  .card--mini{flex-direction:column;align-items:flex-start;padding:24px 24px 26px;gap:18px}
+  .card__ico{width:48px;height:48px;padding:10px;border-radius:14px}
+  .svc__more{margin:40px 0 16px}
+  .card--row{flex-direction:column}
+  .card--row .card__img{flex:none;aspect-ratio:16/9}
+  .card--row .card__body{padding:24px 24px 26px}
+  .card .btn{width:100%}
+  .gal{gap:10px}
+  .gal figure{border-radius:14px}
+  .gal figcaption{padding:28px 12px 10px;font-size:13px}
+  .cta__box{padding:48px 24px;border-radius:24px}
+  .cta__sub{font-size:16px}
+  .cta__btns{flex-direction:column;align-items:stretch}
+  .ftr{padding:36px 0 100px}
+  .ftr__in{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:980px){
+  .nav,.hdr__tel,.hdr .btn--sm{display:none}
+  .burger{display:block}
+}
+@media (max-width:768px){
+  :root{--hdr:68px}
+  .wrap{width:calc(100% - 40px)}
+  section{padding:64px 0}
+  .h1{font-size:36px}
+  .h2{font-size:32px}
+  .sec-head{margin-bottom:32px}
+  .sec-head p:not(.eyebrow){font-size:16px}
+  .logo__mark{width:46px;height:44px}
+  .logo__t strong{font-size:19px}
+  .hero__shade{background:linear-gradient(0deg,rgba(15,14,16,.95) 0%,rgba(15,14,16,.88) 38%,rgba(15,14,16,.55) 68%,rgba(15,14,16,.25) 100%)}
+  .hero__in{padding:calc(var(--hdr) + 32px) 0 36px}
+  .hero .h1{margin-bottom:14px}
+  .hero__lead{font-size:15px;line-height:1.55;margin-bottom:22px}
+  .hero__cta{flex-direction:column;align-items:stretch}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero__bg,.rise{animation:none;transform:none;opacity:1}
+  .fade{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a href="#top" class="logo" aria-label="ORBUD Montaże, strona główna">
+      <img class="logo__mark" src="images/orzel.png" alt="" width="52" height="50">
+      <span class="logo__t"><strong>ORBUD</strong><small>Montaże</small></span>
+    </a>
+    <nav class="nav" aria-label="Główna nawigacja">
+      <a href="#jak">Jak to wygląda</a>
+      <a href="#uslugi">Usługi</a>
+      <a href="#o-mnie">O mnie</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a href="tel:600948614" class="hdr__tel">600 948 614</a>
+    <a href="tel:600948614" class="btn btn--accent btn--sm">Zadzwoń</a>
+    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mmenu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <a href="tel:600948614" class="btn btn--accent">Zadzwoń: 600 948 614</a>
+  <a href="#jak">Jak to wygląda</a>
+  <a href="#uslugi">Usługi</a>
+  <a href="#o-mnie">O mnie</a>
+  <a href="#realizacje">Realizacje</a>
+  <a href="#kontakt">Kontakt</a>
+</div>
+
+<main id="top">
+
+<section class="hero" id="hero" style="padding:0">
+  <!-- ZDJĘCIE STOCKOWE: podmienić na prawdziwą realizację ORBUD -->
+  <img class="hero__bg" src="images/hero.webp" alt="Nowoczesny dom z dużymi przeszkleniami wieczorem" fetchpriority="high">
+  <div class="hero__shade"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow rise">Suwałki i okolice · od ponad 20 lat</p>
+    <h1 class="h1 rise">Montaż okien i&nbsp;drzwi <em>wykonany fachowo</em></h1>
+    <p class="hero__lead rise">Okna, drzwi wejściowe i wewnętrzne, rolety zewnętrzne, bramy garażowe i parapety. Mogę je dostarczyć albo zamontować te, które już kupiłeś. Pomiar i wycena nic nie kosztują.</p>
+    <div class="hero__cta rise">
+      <a href="tel:600948614" class="btn btn--accent"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Zadzwoń: 600 948 614</a>
+      <a href="#uslugi" class="btn btn--ghost">Zobacz, co robię</a>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__t">
+    <span>Montaż okien</span><span>Drzwi wejściowe</span><span>Drzwi wewnętrzne</span><span>Rolety zewnętrzne</span><span>Bramy garażowe</span><span>Parapety</span><span>Wykończenia wnętrz</span><span>Docieplenia i elewacje</span><span>Bezpłatny pomiar</span>
+    <span>Montaż okien</span><span>Drzwi wejściowe</span><span>Drzwi wewnętrzne</span><span>Rolety zewnętrzne</span><span>Bramy garażowe</span><span>Parapety</span><span>Wykończenia wnętrz</span><span>Docieplenia i elewacje</span><span>Bezpłatny pomiar</span>
+  </div>
+</div>
+
+<section class="jak" id="jak">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow fade">Jak to wygląda</p>
+      <h2 class="h2 fade">Trzy kroki <em>i masz nowe okna</em></h2>
+    </div>
+    <ol class="steps">
+      <li class="step fade">
+        <div class="step__num">01</div>
+        <h3 class="h3">Dzwonisz</h3>
+        <p>Mówisz, co chcesz wymienić albo zamontować. Rozmawiasz bezpośrednio ze mną, nie z biurem.</p>
+      </li>
+      <li class="step fade">
+        <div class="step__num">02</div>
+        <h3 class="h3">Przyjeżdżam na pomiar</h3>
+        <p>Mierzę, doradzam, co sprawdzi się w Twoim domu, i podaję cenę. Za darmo i bez zobowiązań.</p>
+      </li>
+      <li class="step fade">
+        <div class="step__num">03</div>
+        <h3 class="h3">Dostawa i montaż</h3>
+        <p>Przywożę i montuję okna lub drzwi albo montuję te, które już masz. Termin ustalamy tak, żeby Ci pasował.</p>
+      </li>
+    </ol>
+    <div class="steps__cta fade">
+      <a href="tel:600948614" class="btn btn--accent"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Umów bezpłatny pomiar</a>
+    </div>
+  </div>
+</section>
+
+<section id="uslugi">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow fade">Usługi</p>
+      <h2 class="h2 fade">Okna, drzwi <em>i&nbsp;wszystko wokół nich</em></h2>
+      <p class="fade">Dostarczam i montuję stolarkę oraz to, co z nią związane: rolety, bramy i parapety. Doradzę, co wybrać do Twojego domu, albo zamontuję to, co już kupiłeś.</p>
+    </div>
+    <div class="svc__grid">
+      <article class="card card--main fade">
+        <!-- ZDJĘCIE STOCKOWE: podmienić na realizację ORBUD -->
+        <div class="card__img"><img src="images/usluga-okna-drzwi.webp" alt="Dom z dużymi oknami i drzwiami wejściowymi" loading="lazy"></div>
+        <div class="card__body">
+          <div class="card__num">01</div>
+          <h3 class="h3">Okna i parapety</h3>
+          <p>Okna do nowych domów i wymiana starych. Demontaż, montaż i wykończenie ościeży, do tego parapety pod kolor.</p>
+          <ul class="checks">
+            <li>Nowe okna i wymiana starych</li>
+            <li>Parapety wewnętrzne i zewnętrzne</li>
+            <li>Z dostawą albo Twoje okna</li>
+            <li>Bezpłatny pomiar i wycena</li>
+          </ul>
+          <div class="card__cta"><a href="tel:600948614" class="btn btn--accent">Zapytaj o wycenę</a></div>
+        </div>
+      </article>
+      <article class="card card--mini fade">
+        <svg class="card__ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="5" width="24" height="38" rx="2"/><path d="M6 43h36M30 25v4"/></svg>
+        <div>
+          <div class="card__num">02</div>
+          <h3 class="h3">Drzwi wejściowe i wewnętrzne</h3>
+          <p>Drzwi zewnętrzne do domu i drzwi pokojowe z ościeżnicami. Równo osadzone i wyregulowane.</p>
+        </div>
+      </article>
+      <article class="card card--mini fade">
+        <svg class="card__ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="6" width="36" height="8" rx="2"/><path d="M9 14v26h30V14M9 20h30M9 26h30M9 32h30"/></svg>
+        <div>
+          <div class="card__num">03</div>
+          <h3 class="h3">Rolety zewnętrzne</h3>
+          <p>Prywatność, ochrona przed słońcem i mniej ciepła uciekającego zimą. Montaż przy nowych i istniejących oknach.</p>
+        </div>
+      </article>
+      <article class="card card--mini fade">
+        <svg class="card__ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 20 24 6l20 14v22H4z"/><path d="M12 42V24h24v18M12 30h24M12 36h24"/></svg>
+        <div>
+          <div class="card__num">04</div>
+          <h3 class="h3">Bramy garażowe</h3>
+          <p>Montaż bram garażowych. Wygoda na co dzień i porządne domknięcie garażu.</p>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="svc__more fade">Robię też</h3>
+    <div class="svc__extra">
+      <article class="card card--row fade">
+        <div class="card__img"><img src="images/usluga-wykonczenia.webp" alt="Wykończone, jasne wnętrze domu" loading="lazy"></div>
+        <div class="card__body">
+          <div class="card__num">05</div>
+          <h3 class="h3">Wykończenia wnętrz</h3>
+          <p>Kompleksowe wykończenie mieszkań i domów. Bez szukania kolejnej ekipy po montażu okien i drzwi.</p>
+        </div>
+      </article>
+      <article class="card card--row fade">
+        <div class="card__img"><img src="images/usluga-elewacje.webp" alt="Biała, gładka elewacja domu jednorodzinnego" loading="lazy"></div>
+        <div class="card__body">
+          <div class="card__num">06</div>
+          <h3 class="h3">Docieplenia i elewacje</h3>
+          <p>Ocieplenie ścian i nowa elewacja. Niższe rachunki za ogrzewanie i dom, który wygląda jak nowy.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="o-mnie">
+  <div class="wrap about__grid">
+    <div class="about__img fade">
+      <!-- PLACEHOLDER: podmienić na zdjęcie Wojciecha -->
+      <img src="images/o-mnie.webp" alt="Wojciech Orłowski przy pracy" loading="lazy">
+      <div class="about__badge"><strong>20+</strong><small>lat w branży</small></div>
+    </div>
+    <div class="about__txt">
+      <p class="eyebrow fade">O mnie</p>
+      <h2 class="h2 fade">Wojciech Orłowski. <em>Fachowiec z Suwałk.</em></h2>
+      <p class="about__lead fade">Od ponad 20 lat montuję okna, drzwi, rolety i bramy w domach i mieszkaniach na Suwalszczyźnie. Dzwonisz bezpośrednio do mnie, nie do biura. Sam przyjeżdżam na pomiar i wycenę, więc od początku wiesz, z kim rozmawiasz i kto odpowiada za robotę.</p>
+      <ul class="checks">
+        <li class="fade">Rozmawiasz bezpośrednio z wykonawcą</li>
+        <li class="fade">Bezpłatny pomiar i wycena</li>
+        <li class="fade">Krótkie terminy realizacji</li>
+      </ul>
+      <p class="about__sign fade">Wojciech Orłowski<small>właściciel ORBUD Montaże</small></p>
+    </div>
+  </div>
+</section>
+
+<section id="realizacje">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow fade">Realizacje</p>
+      <h2 class="h2 fade">Zrobione <em>na czysto</em></h2>
+    </div>
+    <!-- ZDJĘCIA STOCKOWE: podmienić na prawdziwe realizacje ORBUD przed publikacją -->
+    <div class="gal">
+      <figure class="fade"><img src="images/real-1.webp" alt="Okno z widokiem na ogród" loading="lazy"><figcaption>Okna w salonie</figcaption></figure>
+      <figure class="fade"><img src="images/real-2.webp" alt="Białe drzwi wewnętrzne w jasnym pokoju" loading="lazy"><figcaption>Drzwi wewnętrzne</figcaption></figure>
+      <figure class="fade"><img src="images/real-3.webp" alt="Dom z dużymi przeszkleniami" loading="lazy"><figcaption>Duże przeszklenia</figcaption></figure>
+      <figure class="fade"><img src="images/real-4.webp" alt="Jasna jadalnia z oknami" loading="lazy"><figcaption>Okna w jadalni</figcaption></figure>
+      <figure class="fade"><img src="images/real-5.webp" alt="Dom jednorodzinny z nowymi oknami" loading="lazy"><figcaption>Dom jednorodzinny</figcaption></figure>
+      <figure class="fade"><img src="images/real-6.webp" alt="Wykończona kuchnia" loading="lazy"><figcaption>Wykończenie kuchni</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="kontakt">
+  <div class="wrap">
+    <div class="cta__box">
+      <p class="eyebrow fade" style="color:rgba(255,255,255,.85)">Kontakt</p>
+      <h2 class="h2 fade">Wymieniasz okna lub drzwi? <em>Zadzwoń.</em></h2>
+      <a href="tel:600948614" class="cta__tel fade">600 948 614</a>
+      <p class="cta__sub fade">Bezpłatny pomiar i wycena · Suwałki i okolice</p>
+      <div class="cta__btns fade">
+        <a href="tel:600948614" class="btn btn--accent">Zadzwoń teraz</a>
+        <a href="https://share.google/E1n5Oj41pwevPpcTw" target="_blank" rel="noopener" class="btn btn--ghost">Zobacz ORBUD w Google</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <a href="#top" class="logo" aria-label="ORBUD Montaże">
+      <img class="logo__mark" src="images/orzel.png" alt="" width="52" height="50">
+      <span class="logo__t"><strong>ORBUD</strong><small>Montaże</small></span>
+    </a>
+    <p>Wojciech Orłowski · Suwałki i okolice</p>
+    <div class="ftr__links">
+      <a href="tel:600948614">600 948 614</a>
+      <a href="https://share.google/E1n5Oj41pwevPpcTw" target="_blank" rel="noopener">Google</a>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:600948614" class="fab" id="fab" aria-label="Zadzwoń: 600 948 614"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+
+<script>
+// Header: tło po przewinięciu
+const hdr = document.getElementById('hdr');
+const onScroll = () => hdr.classList.toggle('is-scrolled', window.scrollY > 30);
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
+
+// Menu mobilne
+const burger = document.getElementById('burger');
+const mmenu = document.getElementById('mmenu');
+const setMenu = open => {
+  mmenu.classList.toggle('open', open);
+  hdr.classList.toggle('menu-open', open);
+  hdr.classList.toggle('is-scrolled', open || window.scrollY > 30);
+  burger.setAttribute('aria-expanded', open);
+  mmenu.setAttribute('aria-hidden', !open);
+  document.body.style.overflow = open ? 'hidden' : '';
+};
+burger.addEventListener('click', () => setMenu(!mmenu.classList.contains('open')));
+mmenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+// Fade on scroll - zawsze w kolejności z góry na dół
+const fades = [...document.querySelectorAll('.fade')];
+let revealed = 0;
+let pending = new Set();
+let frame = null;
+
+const showInstant = el => {
+  el.style.transition = 'none';
+  el.classList.add('on');
+  fadeObs.unobserve(el);
+};
+
+const flush = () => {
+  frame = null;
+  if (!pending.size) return;
+  const maxIdx = Math.max(...[...pending].map(el => fades.indexOf(el)));
+  let step = 0;
+  for (let i = revealed; i <= maxIdx; i++) {
+    const el = fades[i];
+    if (el.classList.contains('on')) continue;
+    const r = el.getBoundingClientRect();
+    if (r.bottom < 0) {
+      showInstant(el);
+    } else {
+      el.style.transitionDelay = Math.min(step * 0.09, 0.45) + 's';
+      el.classList.add('on');
+      fadeObs.unobserve(el);
+      step++;
+    }
+  }
+  revealed = Math.max(revealed, maxIdx + 1);
+  pending.clear();
+};
+
+const fadeObs = new IntersectionObserver(entries => {
+  entries.forEach(entry => { if (entry.isIntersecting) pending.add(entry.target); });
+  if (pending.size && !frame) frame = requestAnimationFrame(flush);
+}, { threshold: 0.08 });
+fades.forEach(el => fadeObs.observe(el));
+
+// Pływający przycisk telefonu po zjechaniu z hero
+const fab = document.getElementById('fab');
+new IntersectionObserver(([e]) => fab.classList.toggle('show', !e.isIntersecting), { threshold: 0.15 })
+  .observe(document.getElementById('hero'));
+</script>
+</body>
+</html>

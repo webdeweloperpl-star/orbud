@@ -192,7 +192,6 @@ p{text-wrap:pretty}
 .ftr__in{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between}
 .ftr p,.ftr a{color:rgba(255,255,255,.78);font-size:15px;text-decoration:none}
 .ftr a:hover{color:#fff}
-.ftr__links{display:flex;flex-wrap:wrap;gap:24px}
 
 /* ===== pływający telefon ===== */
 .fab{position:fixed;right:18px;bottom:18px;z-index:40;width:62px;height:62px;border-radius:50%;background:var(--accent);color:#fff;display:none;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.7);opacity:0;transform:translateY(20px) scale(.9);transition:opacity .3s,transform .3s;pointer-events:none}
@@ -227,10 +226,14 @@ p{text-wrap:pretty}
   .gal figure{border-radius:14px}
   .gal figcaption{padding:28px 12px 10px;font-size:13px}
   .cta__box{padding:48px 24px;border-radius:24px}
+  .cta__box .h2{font-size:29px}
+  .cta__box .h2 em{display:block}
   .cta__sub{font-size:16px}
+  .cta__dot{display:none}
+  .cta__loc{display:block}
   .cta__btns{flex-direction:column;align-items:stretch}
-  .ftr{padding:36px 0 100px}
-  .ftr__in{flex-direction:column;align-items:flex-start}
+  .ftr{padding:28px 0}
+  .ftr__in{flex-direction:column;align-items:flex-start;gap:14px}
 }
 @media (max-width:980px){
   .nav,.hdr__tel,.hdr .btn--sm{display:none}
@@ -457,7 +460,7 @@ p{text-wrap:pretty}
       <p class="eyebrow fade" style="color:rgba(255,255,255,.85)">Kontakt</p>
       <h2 class="h2 fade">Wymieniasz okna lub drzwi? <em>Zadzwoń.</em></h2>
       <a href="tel:600948614" class="cta__tel fade">600 948 614</a>
-      <p class="cta__sub fade">Bezpłatny pomiar i wycena · Suwałki i okolice</p>
+      <p class="cta__sub fade">Bezpłatny pomiar i wycena<span class="cta__dot"> · </span><span class="cta__loc">Suwałki i okolice</span></p>
       <div class="cta__btns fade">
         <a href="tel:600948614" class="btn btn--accent">Zadzwoń teraz</a>
         <a href="https://share.google/E1n5Oj41pwevPpcTw" target="_blank" rel="noopener" class="btn btn--ghost">Zobacz ORBUD w Google</a>
@@ -474,11 +477,7 @@ p{text-wrap:pretty}
       <img class="logo__mark" src="images/orzel.png" alt="" width="52" height="50">
       <span class="logo__t"><strong>ORBUD</strong><small>Montaże</small></span>
     </a>
-    <p>Wojciech Orłowski · Suwałki i okolice</p>
-    <div class="ftr__links">
-      <a href="tel:600948614">600 948 614</a>
-      <a href="https://share.google/E1n5Oj41pwevPpcTw" target="_blank" rel="noopener">Google</a>
-    </div>
+    <p>Wojciech Orłowski</p>
   </div>
 </footer>
 

@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ORBUD Montaże | Montaż okien, drzwi, rolet i bram Suwałki</title>
-<meta name="description" content="Montaż okien, drzwi wejściowych i wewnętrznych, rolet zewnętrznych, bram garażowych i parapetów w Suwałkach i okolicach. Ponad 20 lat doświadczenia, bezpłatny pomiar i wycena. Zadzwoń: 600 948 614.">
+<meta name="description" content="Montaż okien, drzwi wejściowych i wewnętrznych, rolet zewnętrznych, bram garażowych i parapetów w Suwałkach i okolicach. Ponad 10 lat doświadczenia, bezpłatny pomiar i wycena. Zadzwoń: 600 948 614.">
 <meta name="theme-color" content="#0f0e10">
 <link rel="icon" type="image/png" href="images/favicon-192.png">
 <link rel="apple-touch-icon" href="images/favicon-192.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ORBUD Montaże | Montaż okien i drzwi Suwałki">
-<meta property="og:description" content="Okna, drzwi, rolety zewnętrzne, bramy garażowe i parapety. Ponad 20 lat doświadczenia, bezpłatny pomiar i wycena.">
+<meta property="og:description" content="Okna, drzwi, rolety zewnętrzne, bramy garażowe i parapety. Ponad 10 lat doświadczenia, bezpłatny pomiar i wycena.">
 <meta property="og:image" content="images/hero.webp">
 <meta property="og:locale" content="pl_PL">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -175,6 +175,7 @@ p{text-wrap:pretty}
 .gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
 .gal figure:hover img{transform:scale(1.05)}
 .gal figcaption{position:absolute;inset:auto 0 0;padding:40px 18px 14px;background:linear-gradient(0deg,rgba(15,14,16,.9),rgba(15,14,16,0));font-size:15px;font-weight:600}
+.gal__dots{display:none}
 
 /* ===== końcowe CTA ===== */
 .cta{padding-top:0}
@@ -207,7 +208,6 @@ p{text-wrap:pretty}
   .svc__extra{grid-template-columns:1fr}
   .about__grid{grid-template-columns:1fr;gap:40px}
   .about__img{aspect-ratio:4/3}
-  .gal{grid-template-columns:repeat(2,1fr)}
   .fab{display:grid}
 }
 @media (max-width:768px){
@@ -222,9 +222,16 @@ p{text-wrap:pretty}
   .card--row .card__img{flex:none;aspect-ratio:16/9}
   .card--row .card__body{padding:24px 24px 26px}
   .card .btn{width:100%}
-  .gal{gap:10px}
-  .gal figure{border-radius:14px}
-  .gal figcaption{padding:28px 12px 10px;font-size:13px}
+  /* galeria: zdjęcia jedno na drugim, widoczne tylko .is-cur */
+  .gal{grid-template-columns:1fr;gap:0}
+  .gal figure{grid-area:1/1;border-radius:16px}
+  .gal figure.fade.on{opacity:0;transition:opacity .9s ease}
+  .gal figure.fade.on.is-cur{opacity:1}
+  .gal figcaption{padding:36px 18px 14px;font-size:15px}
+  .gal__dots{display:flex;justify-content:center;gap:4px;margin-top:14px}
+  .gal__dots button{width:28px;height:28px;padding:0;border:0;background:none;cursor:pointer;display:grid;place-items:center}
+  .gal__dots button::before{content:"";width:8px;height:8px;border-radius:4px;background:rgba(255,255,255,.35);transition:width .3s,background .3s}
+  .gal__dots button[aria-current="true"]::before{width:22px;background:var(--accent-l)}
   .cta__box{padding:48px 24px;border-radius:24px}
   .cta__box .h2{font-size:29px}
   .cta__box .h2 em{display:block}
@@ -297,7 +304,7 @@ p{text-wrap:pretty}
   <img class="hero__bg" src="images/hero.webp" alt="Nowoczesny dom z dużymi przeszkleniami wieczorem" fetchpriority="high">
   <div class="hero__shade"></div>
   <div class="wrap hero__in">
-    <p class="eyebrow rise">Suwałki i okolice · od ponad 20 lat</p>
+    <p class="eyebrow rise">Suwałki i okolice · od ponad 10 lat</p>
     <h1 class="h1 rise">Montaż okien i&nbsp;drzwi <em>wykonany fachowo</em></h1>
     <p class="hero__lead rise">Okna, drzwi wejściowe i wewnętrzne, rolety zewnętrzne, bramy garażowe i parapety. Mogę je dostarczyć albo zamontować te, które już kupiłeś. Pomiar i wycena nic nie kosztują.</p>
     <div class="hero__cta rise">
@@ -353,7 +360,7 @@ p{text-wrap:pretty}
     <div class="svc__grid">
       <article class="card card--main fade">
         <!-- ZDJĘCIE STOCKOWE: podmienić na realizację ORBUD -->
-        <div class="card__img"><img src="images/usluga-okna-drzwi.webp" alt="Dom z dużymi oknami i drzwiami wejściowymi" loading="lazy"></div>
+        <div class="card__img"><img src="images/usluga-okna-drzwi.webp" alt="Montażysta przykręca ramę nowego okna" loading="lazy"></div>
         <div class="card__body">
           <div class="card__num">01</div>
           <h3 class="h3">Okna i parapety</h3>
@@ -404,7 +411,7 @@ p{text-wrap:pretty}
         </div>
       </article>
       <article class="card card--row fade">
-        <div class="card__img"><img src="images/usluga-elewacje.webp" alt="Biała, gładka elewacja domu jednorodzinnego" loading="lazy"></div>
+        <div class="card__img"><img src="images/usluga-elewacje.webp" alt="Ocieplanie ściany domu wełną izolacyjną" loading="lazy"></div>
         <div class="card__body">
           <div class="card__num">06</div>
           <h3 class="h3">Docieplenia i elewacje</h3>
@@ -420,12 +427,12 @@ p{text-wrap:pretty}
     <div class="about__img fade">
       <!-- PLACEHOLDER: podmienić na zdjęcie Wojciecha -->
       <img src="images/o-mnie.webp" alt="Wojciech Orłowski przy pracy" loading="lazy">
-      <div class="about__badge"><strong>20+</strong><small>lat w branży</small></div>
+      <div class="about__badge"><strong>10+</strong><small>lat w branży</small></div>
     </div>
     <div class="about__txt">
       <p class="eyebrow fade">O mnie</p>
       <h2 class="h2 fade">Wojciech Orłowski. <em>Fachowiec z Suwałk.</em></h2>
-      <p class="about__lead fade">Od ponad 20 lat montuję okna, drzwi, rolety i bramy w domach i mieszkaniach na Suwalszczyźnie. Dzwonisz bezpośrednio do mnie, nie do biura. Sam przyjeżdżam na pomiar i wycenę, więc od początku wiesz, z kim rozmawiasz i kto odpowiada za robotę.</p>
+      <p class="about__lead fade">Od ponad 10 lat montuję okna, drzwi, rolety i bramy w domach i mieszkaniach na Suwalszczyźnie. Dzwonisz bezpośrednio do mnie, nie do biura. Sam przyjeżdżam na pomiar i wycenę, więc od początku wiesz, z kim rozmawiasz i kto odpowiada za robotę.</p>
       <ul class="checks">
         <li class="fade">Rozmawiasz bezpośrednio z wykonawcą</li>
         <li class="fade">Bezpłatny pomiar i wycena</li>
@@ -440,16 +447,18 @@ p{text-wrap:pretty}
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow fade">Realizacje</p>
-      <h2 class="h2 fade">Zrobione <em>na czysto</em></h2>
+      <h2 class="h2 fade">Zrobione <em>fachowo</em></h2>
     </div>
-    <!-- ZDJĘCIA STOCKOWE: podmienić na prawdziwe realizacje ORBUD przed publikacją -->
-    <div class="gal">
-      <figure class="fade"><img src="images/real-1.webp" alt="Okno z widokiem na ogród" loading="lazy"><figcaption>Okna w salonie</figcaption></figure>
-      <figure class="fade"><img src="images/real-2.webp" alt="Białe drzwi wewnętrzne w jasnym pokoju" loading="lazy"><figcaption>Drzwi wewnętrzne</figcaption></figure>
-      <figure class="fade"><img src="images/real-3.webp" alt="Dom z dużymi przeszkleniami" loading="lazy"><figcaption>Duże przeszklenia</figcaption></figure>
-      <figure class="fade"><img src="images/real-4.webp" alt="Jasna jadalnia z oknami" loading="lazy"><figcaption>Okna w jadalni</figcaption></figure>
-      <figure class="fade"><img src="images/real-5.webp" alt="Dom jednorodzinny z nowymi oknami" loading="lazy"><figcaption>Dom jednorodzinny</figcaption></figure>
-      <figure class="fade"><img src="images/real-6.webp" alt="Wykończona kuchnia" loading="lazy"><figcaption>Wykończenie kuchni</figcaption></figure>
+    <!-- ZDJĘCIA STOCKOWE (Pexels, darmowa licencja): podmienić na prawdziwe realizacje ORBUD -->
+    <div class="gal" id="gal">
+      <figure class="fade is-cur"><img src="images/real-1.webp" alt="Nowe okno w antracytowej ramie w odnowionym pokoju" loading="lazy"><figcaption>Okna</figcaption></figure>
+      <figure class="fade"><img src="images/real-2.webp" alt="Nowoczesne drzwi wejściowe z przeszkleniami po bokach" loading="lazy"><figcaption>Drzwi wejściowe</figcaption></figure>
+      <figure class="fade"><img src="images/real-3.webp" alt="Brama garażowa w domu jednorodzinnym" loading="lazy"><figcaption>Bramy garażowe</figcaption></figure>
+    </div>
+    <div class="gal__dots" aria-label="Wybierz zdjęcie">
+      <button type="button" aria-label="Zdjęcie 1: okna" aria-current="true"></button>
+      <button type="button" aria-label="Zdjęcie 2: drzwi wejściowe"></button>
+      <button type="button" aria-label="Zdjęcie 3: bramy garażowe"></button>
     </div>
   </div>
 </section>
@@ -543,6 +552,35 @@ const fadeObs = new IntersectionObserver(entries => {
   if (pending.size && !frame) frame = requestAnimationFrame(flush);
 }, { threshold: 0.08 });
 fades.forEach(el => fadeObs.observe(el));
+
+// Realizacje: na telefonie zdjęcia zmieniają się co 3,5 s (kropki + przesunięcie palcem)
+const gal = document.getElementById('gal');
+const slides = [...gal.querySelectorAll('figure')];
+const dots = [...document.querySelectorAll('.gal__dots button')];
+const galMobile = matchMedia('(max-width:768px)');
+let cur = 0, galTimer = null;
+
+const showSlide = i => {
+  cur = (i + slides.length) % slides.length;
+  slides.forEach((s, k) => { s.classList.toggle('is-cur', k === cur); s.style.transitionDelay = ''; });
+  dots.forEach((d, k) => d.setAttribute('aria-current', k === cur));
+};
+const playGal = () => {
+  clearInterval(galTimer);
+  galTimer = galMobile.matches ? setInterval(() => showSlide(cur + 1), 3500) : null;
+};
+dots.forEach((d, k) => d.addEventListener('click', () => { showSlide(k); playGal(); }));
+
+let touchX = null;
+gal.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+gal.addEventListener('touchend', e => {
+  if (touchX === null) return;
+  const dx = e.changedTouches[0].clientX - touchX;
+  touchX = null;
+  if (Math.abs(dx) > 40) { showSlide(cur + (dx < 0 ? 1 : -1)); playGal(); }
+});
+galMobile.addEventListener('change', playGal);
+playGal();
 
 // Pływający przycisk telefonu po zjechaniu z hero
 const fab = document.getElementById('fab');

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://orbud.vercel.app/sitemap.xml
+Sitemap: https://orbudmontaze.pl/sitemap.xml

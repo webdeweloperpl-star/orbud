@@ -170,6 +170,7 @@ p{text-wrap:pretty}
 .card p{color:var(--muted);font-size:16px}
 .checks{list-style:none;display:grid;gap:10px;margin-top:20px}
 .checks li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--txt)}
+.checks__note{display:block;font-size:14px;color:var(--muted);margin-top:2px}
 .checks li::before{content:"";flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/13px no-repeat}
 .card__cta{margin-top:auto;padding-top:26px}
 
@@ -452,11 +453,11 @@ p{text-wrap:pretty}
     <div class="about__txt">
       <p class="eyebrow fade">O mnie</p>
       <h2 class="h2 fade">Wojciech Orłowski. <em>Fachowiec z Suwałk.</em></h2>
-      <p class="about__lead fade">Od ponad 10 lat montuję okna, drzwi, rolety i bramy w domach i mieszkaniach na Suwalszczyźnie. Dzwonisz bezpośrednio do mnie, nie do biura. Sam przyjeżdżam na pomiar i wycenę, więc od początku wiesz, z kim rozmawiasz i kto odpowiada za robotę.</p>
+      <p class="about__lead fade">Od ponad 10 lat montuję okna, drzwi, rolety i bramy w domach i mieszkaniach na Suwalszczyźnie. Dzwonisz bezpośrednio do mnie, umawiamy się na pomiar. Następnego dnia masz wycenę. Od początku wiesz, z kim rozmawiasz i kto odpowiada za robotę.</p>
       <ul class="checks">
         <li class="fade">Rozmawiasz bezpośrednio z wykonawcą</li>
         <li class="fade">Bezpłatny pomiar i wycena</li>
-        <li class="fade">Krótkie terminy realizacji</li>
+        <li class="fade"><span>Krótkie terminy realizacji<small class="checks__note">(Okna Drutex - 10 dni roboczych)</small></span></li>
       </ul>
       <p class="about__sign fade">Wojciech Orłowski<small>właściciel ORBUD Montaże</small></p>
     </div>
